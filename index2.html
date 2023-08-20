@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <style>
+        header {
+            width: 100%;
+            height: 100vh;
+            background-image: url('sunrise-1014712_1280.jpg');
+            /* background-color: rgb(212, 73, 34); */
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            height: 80px;
+            /* background:white; */
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(3, 31, 48);
+        }
+
+        .logo {
+            font-size: 2em;
+            letter-spacing: 2px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            position: relative;
+
+        }
+
+        .menu a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+
+        .menu a:hover:before {
+            width: 90%;
+
+        }
+
+        .register a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            background-color: rgb(217, 70, 70);
+            border-radius: 8px;
+            transition: 0.4s;
+
+        }
+
+        .register a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+
+        }
+
+        .headertext {
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgb(16, 16, 16);
+        }
+
+        .headertext a {
+            text-decoration: none;
+            color: white;
+            background-color: rgb(217, 70, 70);
+            /* font-size: 40px; */
+            border-radius: 8px;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+
+        }
+
+        .headertext a:hover {
+
+            border: 2px solid indianred;
+        }
+
+        .headertext span {
+            letter-spacing: 5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .headertext h1 {
+            font-size: 3.5em;
+        }
+
+        .card {
+
+            background-color: rgb(51, 164, 59);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 20%;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            display: inline-block;
+            padding: 2px 16px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">JP Travel</div>
+            <div class="menu">
+                <a href="">Home</a>
+                <a href="/hillstation">Hill Station</a>
+                <a href="">Best Offer</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div class="register">
+                <a href="/register">Register</a>
+            </div>
+        </nav>
+        <section class="headertext">
+            <span>Enjoy</span>
+            <h1>International Travel Agency</h1>
+            <br>
+            <a href="">Book Your Trip</a>
+        </section>
+    </header>
+
+
+
+</body>
+
+</html>
